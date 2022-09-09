@@ -5,7 +5,15 @@ function hideElement(element) {
 function hideRetweets() {
   // [data-testid=cellInnerDiv1] essentially matches a tweet
   Array.from(document.querySelectorAll("[data-testid=cellInnerDiv]"))
-    .filter((element) => element.outerHTML.includes("Retweeted"))
+    .filter(
+      (element) =>
+        // hide retweets
+        element.outerHTML.includes("Retweeted") &&
+        // ignore route /notifications
+        !element.outerHTML.includes(" Retweeted your Tweet") &&
+        // ignore your own retweets
+        !element.outerHTML.includes("You Retweeted")
+    )
     .forEach(hideElement);
 }
 
