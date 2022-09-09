@@ -11,4 +11,6 @@ Your own retweets, and Twitter's `Notifications` page will continue to be displa
 
 Use it as a locally installed extension:
 
-Clone this repository, then go to `chrome://extensions` in your browser, and "Load unpacked". Make sure "Developer mode" at the Top-Right is enabled in Chrome Extensions. This will install the extension. You should not see the right side bar when you navigate to Twitter. Happy browsing!
+Clone this repository, then go to `chrome://extensions` in your browser, and "Load unpacked". Make sure "Developer mode" at the Top-Right is enabled in Chrome Extensions. This will install the extension.
+
+If you had Twitter open during installation, refresh the page.
