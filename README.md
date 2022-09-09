@@ -1,9 +1,14 @@
-TODO rewrite
+# Hide Twitter Retweets
 
-# Make the new Twitter suck less
+A Chrome extension to remove retweets from Twitter.
 
-This is a Chrome extension you can install locally to remove the distracting side-bar from Twitter. If you want to search, you can change the permissions for the thing (or make your own version).
+## How it works
 
-## To Install
+It scans the webpage for the word `"Retweeted"` and then hides the DOM element.
+Your own retweets, and Twitter's `Notifications` page will continue to be displayed.
 
-Clone this directory, then go to `chrome://extensions` in your browser, and "Load unpacked". Make sure "Developer mode" is enabled. This will install the extension and you should not see the right side bar when you navigate to Twitter. Happy browsing!
+## Usage
+
+Use it as a locally installed extension:
+
+Clone this repository, then go to `chrome://extensions` in your browser, and "Load unpacked". Make sure "Developer mode" at the Top-Right is enabled in Chrome Extensions. This will install the extension. You should not see the right side bar when you navigate to Twitter. Happy browsing!
